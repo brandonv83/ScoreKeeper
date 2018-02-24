@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/football3"
+    android:fillViewport="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/MainLinearLayoutMarginTop"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:context="com.example.android.scorekeeper.MainActivity">
+
+                <TextView
+                    style="@style/TeamNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/TextView_Padding"
+                    android:text="@string/TeamA" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    style="@style/ScoreTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/TextView_Padding"
+                    android:text="@string/TeamATotal" />
+
+                <Button
+                    style="@style/TeamAScoreButtons"
+                    android:onClick="touchdownTeamA"
+                    android:text="@string/Touchdown" />
+
+                <Button
+                    style="@style/TeamAScoreButtons"
+                    android:onClick="extraPointTeamA"
+                    android:text="@string/ExtraPoint" />
+
+                <Button
+                    style="@style/TeamAScoreButtons"
+                    android:onClick="fieldGoalTeamA"
+                    android:text="@string/FieldGoal" />
+
+                <Button
+                    style="@style/TeamAScoreButtons"
+                    android:onClick="safetyTeamA"
+                    android:text="@string/Safety" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"></View>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:context="com.example.android.courtcounter.MainActivity">
+
+                <TextView
+                    style="@style/TeamNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/TextView_Padding"
+                    android:text="@string/TeamB" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    style="@style/ScoreTextView"
+                    android:padding="@dimen/TextView_Padding"
+                    android:text="@string/TeamBTotal" />
+
+                <Button
+                    style="@style/TeamBScoreButtons"
+                    android:onClick="touchdownTeamB"
+                    android:text="@string/Touchdown" />
+
+                <Button
+                    style="@style/TeamBScoreButtons"
+                    android:onClick="extraPointTeamB"
+                    android:text="@string/ExtraPoint" />
+
+                <Button
+                    style="@style/TeamBScoreButtons"
+                    android:onClick="fieldGoalTeamB"
+                    android:text="@string/FieldGoal" />
+
+                <Button
+                    style="@style/TeamBScoreButtons"
+                    android:onClick="safetyTeamB"
+                    android:text="@string/Safety" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/ResetButtonBottomMargin"
+            android:background="@color/ResetButtonBackground"
+            android:onClick="resetScore"
+            android:text="@string/ResetButton"
+            android:textColor="@color/ButtonText"></Button>
+
+
+    </RelativeLayout>
+</ScrollView>

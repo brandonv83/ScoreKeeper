@@ -1,0 +1,43 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">#FF9800</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">#FF9800</item>
+    </style>
+    <style name="TeamNameTextView">
+        <item name="android:textSize">20sp</item>\
+        <item name="android:textColor">#616161</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="ScoreTextView">
+        <item name="android:textSize">64sp</item>\
+        <item name="android:textColor">@color/ScoreText</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">16dp</item>
+
+    </style>
+    <style name="TeamBScoreButtons">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@color/ULRed</item>
+        <item name="android:textColor">@color/ButtonText</item>
+    </style>
+
+    <style name="TeamAScoreButtons">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@color/UKBlue</item>
+        <item name="android:textColor">@color/ButtonText</item>
+    </style>
+</resources>
